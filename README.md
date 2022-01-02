@@ -23,7 +23,10 @@ Additionally, when the code is run the screen updates to show each step, althoug
 The summary will provide the advantages and disadvantage of refractoring code in general and in regards to the Stock Analysis subroutines (Original vs. Refractored).
 
 ### Advantages and Disadvantages to Refractoring Code in General
-The advantages to refractoring code in general are:
-- Reducing execution time so that the code runs faster and is computationally efficient
-- Allows coder to gain familiarity with current code and discover bugs
-- Simplifying code makes it easier to update in the future
+The potential advantages to refractoring code in general are:
+- reducing execution time so that the code runs faster and is computationally efficient
+- allows coder to gain familiarity with current code and discover bugs
+- simplifying code makes it easier to update in the future
+
+The potential disadvantages to refractoring code in general are:
+- the code can be extremely complicated and take a lot of time to refractor
