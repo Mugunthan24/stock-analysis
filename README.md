@@ -34,4 +34,6 @@ The potential disadvantages to refractoring code in general are:
 - the person reviewing the code can miss something vital causing bugs that may or may not be caught for a while
 
 ### Advantages and Disadvantages to Refractoring Stock Analysis Subroutine
-d
+Refractoring the Stock Analysis subroutine has many advantages. These advantages include making the code more computentationally efficient and reducing the run time allowing Steve to get the desired information for his analysis quicker. Furthermore, it allows us to gain familiarity with the code and understand exactly what it is trying to do step by step. In doing this, bugs can be discovered. Lastly, if updates ever need to be made in the future then this can be done more easily since the code has been "cleaned, making it more easily understandable if a new developer comes along and wants to make modifications (e.g. order of data table columns change, so code needs to be updated to account for update).
+
+
