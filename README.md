@@ -20,4 +20,7 @@ The refractured code took advantage of the fact that the stock's ticker and date
 Additionally, when the code is run the screen updates to show each step, although it happens quickly and is hard to notice. For the Stock Analysis subroutine, this increases the execution time slightly. At the beginning of the subroutine, if we add the line "Application.ScreenuUpdating = False" the screen will no longer update while the code is being run and this further reduces the execution time.
 ## Summary
 The summary will provide the advantages and disadvantage of refractoring code in general and in regards to the Stock Analysis subroutines (Original vs. Refractored).
-###Advantages and Disadvantages to Refractoring Code in General
+### Advantages and Disadvantages to Refractoring Code in General
+The advantages to refractoring code in general are:
+- Reducing execution time so that the code runs faster and is computationally efficient
+- 
