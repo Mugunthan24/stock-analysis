@@ -34,3 +34,4 @@ The potential disadvantages to refractoring code in general are:
 - the person reviewing the code can miss something vital causing bugs that may or may not be caught for a while
 
 ### Advantages and Disadvantages to Refractoring Stock Analysis Subroutine
+d
