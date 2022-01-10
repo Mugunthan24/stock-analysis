@@ -19,14 +19,14 @@ In 2018, all the stocks with the exception of Enphase Energy (ENPH) and Sunrun (
 ![image_name](https://github.com/Mugunthan24/stock-analysis/blob/main/resources/VBA_Challenge_2017%20(Original).PNG)
 ![image_name](https://github.com/Mugunthan24/stock-analysis/blob/main/resources/VBA_Challenge_2018%20(Original).PNG)
 
-In the original subroutine that created the analysis table for the 12 stocks, the For Loop would iterate through all 3013 rows for each stock (12x), even if the information (volume, starting price, and ending price) was already captured for that stock. The execution time for when the code was run for 2017 was 0.95 seconds.
+In the original subroutine that created the analysis table for the 12 stocks, the For Loop would iterate through all 3013 rows for each stock (12x), even if the information (volume, starting price, and ending price) was already captured for that stock. The execution time for when the code was run for 2017 and 2018 was approximately 0.95 seconds.
 
 ![image_name](https://github.com/Mugunthan24/stock-analysis/blob/main/resources/VBA_Challenge_2017.png)
 ![image_name](https://github.com/Mugunthan24/stock-analysis/blob/main/resources/VBA_Challenge_2018.PNG)
 
-The refractured code took advantage of the fact that the stock's ticker and dates were sorted in ascending order (A-Z). This makes it possible to iterate through all 3013 just once. Instead of iterating through all 3013 rows for each stock, in the ticker column of the data set once the current ticker value (Cells(i, 1)) we have been looking for does not equal the next ticker value (Cells(i + 1, 1)) then we can move on and start populating information for the next ticker (tickerIndex = tickerIndex + 1). After refractoring the code and implementing this change, the execution time when the code was run for 2017 was 0.21 seconds.
+The refractured code took advantage of the fact that the stock's ticker and dates were sorted in ascending order (A-Z). This makes it possible to iterate through all 3013 rows just once. Instead of iterating through all 3013 rows for each stock, in the ticker column of the data set, once the current ticker value (Cells(i, 1)) we have been looking for does not equal the next ticker value (Cells(i + 1, 1)) then we can move on and start populating information for the next ticker (tickerIndex = tickerIndex + 1). After refractoring the code and implementing this change, the execution time when the code was run in 2017 and 2018 was approximately 0.09 seconds.
 
-Additionally, when the code is run the screen updates to show each step, although it happens quickly and is hard to notice. For the Stock Analysis subroutine, this increases the execution time slightly. At the beginning of the subroutine, if we add the line "Application.ScreenuUpdating = False" the screen will no longer update while the code is being run and this further reduces the execution time.
+Additionally, when the code is run the spreadsheet updates to show each step, although it happens quickly and is hard to notice. For the Stock Analysis subroutine, this increases the execution time slightly. At the beginning of the subroutine, if we add the line "Application.ScreenuUpdating = False" the screen will no longer update while the code is being run and this further reduces the execution time.
 
 ## Summary
 The summary will provide the advantages and disadvantage of refractoring code in general and in regards to the Stock Analysis subroutines (Original vs. Refractored).
